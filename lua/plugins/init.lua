@@ -1,0 +1,18 @@
+return {
+	require("plugins.flutter"),
+	require("plugins.telescope"),
+	require("plugins.lsp"),
+	require("plugins.treesitter"),
+	require("plugins.cmp"),
+	require("plugins.conform"),
+	require("plugins.theme"),
+	require("plugins.nvimtree"),
+	require("plugins.comment"),
+	require("plugins.hop"),
+	require("plugins.gitsigns"),
+	require("plugins.todo"),
+	require("plugins.mini"),
+	require("plugins.lualine"),
+	"tpope/vim-sleuth",
+	"dart-lang/dart-vim-plugin",
+}
