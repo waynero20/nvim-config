@@ -22,7 +22,7 @@ nvim/
 
 ---
 
-## 🚀 Plugin Management with `lazy.nvim`
+🚀 Plugin Management with `lazy.nvim`
 
 This config uses [lazy.nvim](https://github.com/folke/lazy.nvim), a performance-focused plugin manager that offers:
 
@@ -34,71 +34,28 @@ See `lua/lazy_setup.lua` for how it's initialized.
 
 ---
 
-## 🔌 Key Plugins
+🔌 Key Plugins
 
-### 🖌 UI & Themes
+🖌 UI & Themes
 - `catppuccin`, `rose-pine`, or `cyberdream` – beautiful Neovim color schemes
 - `nvim-tree.lua` – File explorer
 - `lualine.nvim` – Statusline
 - `gitsigns.nvim` – Git diff indicators in the gutter
 - `todo-comments.nvim` – Highlight and search TODO/FIX comments
 
-### 🧠 Coding Essentials
+🧠 Coding Essentials
 - `nvim-lspconfig` + `mason.nvim` – LSP server installer and config
 - `nvim-cmp` – Completion engine
 - `LuaSnip` – Snippet engine
 - `conform.nvim` – Asynchronous code formatter
 - `Comment.nvim` – Easy commenting with `gc`
 
-### 🔍 Navigation & Search
+🔍 Navigation & Search
 - `telescope.nvim` – Fuzzy finder for files, buffers, symbols, etc.
 - `telescope-fzf-native.nvim` – Native FZF support for faster search
 - `hop.nvim` – Motion plugin to jump across words and lines
 
 ---
-
-## 🛠 Installation
-
-### Prerequisites
-
-- [Neovim v0.9+](https://neovim.io/)
-- `git`
-- `make` (for building native Telescope extensions)
-- A [Nerd Font](https://www.nerdfonts.com/) for full icon support
-
-### Setup
-
-```bash
-# Clone into your Neovim config directory
-git clone https://github.com/yourusername/nvim-config.git ~/.config/nvim
-
-# Launch Neovim (plugins will auto-install)
-nvim
-
-⚙️ Configuration
-You can customize things easily:
-
-lua/options.lua – editor behavior (line numbers, mouse, tab size, etc.)
-
-lua/keymaps.lua – keybindings (e.g., leader key shortcuts)
-
-lua/plugins/ – plugin-specific settings
-
-lua/autocmds.lua – custom behavior triggers
-
-🧠 Recommended Keymaps
-Leader key: <space>
-
-Action	Shortcut
-File search	<leader>ff
-Live grep	<leader>fg
-Buffer switch	<leader>fb
-Toggle file tree	<leader>e
-Comment line	gcc or gc
-Hop word	hw
-
-Modify these in lua/keymaps.lua as you prefer.
-
 
 🙏 Credits
 Huge thanks to:
