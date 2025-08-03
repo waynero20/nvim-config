@@ -18,8 +18,6 @@ nvim/
     ├── options.lua        # Neovim settings
     └── plugins/           # Modular plugin configurations
 
-
-
 ---
 
 🚀 Plugin Management with `lazy.nvim`
@@ -56,6 +54,12 @@ See `lua/lazy_setup.lua` for how it's initialized.
 - `hop.nvim` – Motion plugin to jump across words and lines
 
 ---
+### Prerequisites
+
+- [Neovim v0.9+](https://neovim.io/)
+- `git`
+- `make` (for building native Telescope extensions)
+- A [Nerd Font](https://www.nerdfonts.com/) for full icon support
 
 🙏 Credits
 Huge thanks to:

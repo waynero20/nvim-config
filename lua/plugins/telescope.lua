@@ -20,8 +20,8 @@ return {
 			defaults = {
 				layout_strategy = "horizontal",
 				layout_config = {
-					width = 0.9, -- 90% of the screen width
-					height = 0.8, -- 85% of the screen height
+					width = 0.9,
+					height = 0.8,
 					prompt_position = "top",
 					preview_width = 0.6,
 				},
