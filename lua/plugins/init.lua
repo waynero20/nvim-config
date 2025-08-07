@@ -13,6 +13,7 @@ return {
 	require("plugins.todo"),
 	require("plugins.mini"),
 	require("plugins.lualine"),
+	require("plugins.codeium"),
 	"tpope/vim-sleuth",
 	"dart-lang/dart-vim-plugin",
 }
