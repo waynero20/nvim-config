@@ -23,7 +23,6 @@ return {
 					width = 0.9,
 					height = 0.8,
 					prompt_position = "top",
-					preview_width = 0.6,
 				},
 			},
 			extensions = {
@@ -37,21 +36,31 @@ return {
 		pcall(telescope.load_extension, "fzf")
 		pcall(telescope.load_extension, "ui-select")
 
-		-- Telescope UI
-		vim.api.nvim_set_hl(0, "TelescopeNormal", { fg = "#d4d4d4", bg = "#1a1b26" }) 
-		vim.api.nvim_set_hl(0, "TelescopeBorder", { fg = "#7aa2f7", bg = "#1a1b26" }) 
-		vim.api.nvim_set_hl(0, "TelescopePromptBorder", { fg = "#ff9e64", bg = "#1f2335" }) 
-		vim.api.nvim_set_hl(0, "TelescopeResultsBorder", { fg = "#7dcfff", bg = "#1a1b26" }) 
-		vim.api.nvim_set_hl(0, "TelescopePreviewBorder", { fg = "#9ece6a", bg = "#1a1b26" }) 
+		-- Sleek Dark Theme (charcoal + teal accent)
+		local bg_dark = "#0f1117"
+		local bg_panel = "#151820"
+		local fg_normal = "#c5cdd9"
+		local cyan = "#5ad4e6"
+		local magenta = "#c678dd"
+
+		-- Core windows
+		vim.api.nvim_set_hl(0, "TelescopeNormal", { fg = fg_normal, bg = bg_dark })
+		vim.api.nvim_set_hl(0, "TelescopeBorder", { fg = cyan, bg = bg_dark })
+		vim.api.nvim_set_hl(0, "TelescopePromptBorder", { fg = magenta, bg = bg_panel })
+		vim.api.nvim_set_hl(0, "TelescopeResultsBorder", { fg = cyan, bg = bg_dark })
+		vim.api.nvim_set_hl(0, "TelescopePreviewBorder", { fg = cyan, bg = bg_dark })
 
 		-- Titles
-		vim.api.nvim_set_hl(0, "TelescopePromptTitle", { fg = "#ff9e64", bg = "#1f2335", bold = true }) 
-		vim.api.nvim_set_hl(0, "TelescopeResultsTitle", { fg = "#7dcfff", bg = "#1a1b26", bold = true }) 
-		vim.api.nvim_set_hl(0, "TelescopePreviewTitle", { fg = "#9ece6a", bg = "#1a1b26", bold = true }) 
+		vim.api.nvim_set_hl(0, "TelescopePromptTitle", { fg = magenta, bg = bg_panel, bold = true })
+		vim.api.nvim_set_hl(0, "TelescopeResultsTitle", { fg = cyan, bg = bg_dark, bold = true })
+		vim.api.nvim_set_hl(0, "TelescopePreviewTitle", { fg = cyan, bg = bg_dark, bold = true })
 
 		-- Prompt area
-		vim.api.nvim_set_hl(0, "TelescopePromptNormal", { fg = "#c0caf5", bg = "#1f2335" })
-		vim.api.nvim_set_hl(0, "TelescopePromptPrefix", { fg = "#f7768e", bg = "#1f2335" }) 
+		vim.api.nvim_set_hl(0, "TelescopePromptNormal", { fg = fg_normal, bg = bg_panel })
+		vim.api.nvim_set_hl(0, "TelescopePromptPrefix", { fg = magenta, bg = bg_panel })
+
+		-- Matching results highlight
+		vim.api.nvim_set_hl(0, "TelescopeMatching", { fg = cyan, bold = true })
 
 		local builtin = require("telescope.builtin")
 		vim.keymap.set("n", "<leader>sf", builtin.find_files)

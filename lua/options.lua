@@ -24,3 +24,12 @@ vim.opt.inccommand = "split"
 vim.opt.cursorline = true
 vim.opt.scrolloff = 10
 vim.opt.hlsearch = true
+vim.opt.signcolumn = "number"
+
+-- Keep number column narrow
+vim.opt.numberwidth = 2
+
+vim.api.nvim_set_hl(0, "FloatBorder", { fg = "#c678dd", bg = "NONE" })
+vim.api.nvim_set_hl(0, "NvimTreeNormalFloat", { bg = "#0f1117" })
+vim.api.nvim_set_hl(0, "NvimTreeWinSeparator", { fg = "#c678dd", bg = "#0f1117" })
+vim.api.nvim_set_hl(0, "NvimTreeNormal", { bg = "#0f1117" })

@@ -5,3 +5,4 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 		vim.highlight.on_yank()
 	end,
 })
+vim.api.nvim_set_hl(0, "NvimTreeFloatBorder", { fg = "#5ad4e6", bg = "#0f1117" })
